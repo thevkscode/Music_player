@@ -1,0 +1,460 @@
+#main {
+    display: flex;
+}
+
+#artist-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-box {
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    min-height: 300px;
+    width: 120%;
+    min-width: 400px;
+    background-color: rgb(4, 5, 65);
+    box-shadow: 0px 4px 13px 4px black;
+    margin-left: -15%;
+}
+
+.artist-img {
+    height: 100%;
+    width: 100%;
+}
+
+.artist-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.artist-name-display {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.artist-name {
+    color: white;
+    font-size: 25pt;
+}
+
+.followers {
+    color: white;
+    margin-top: 12pt;
+    font-size: 13pt;
+}
+
+.Description {
+    color: white;
+    font-size: 12pt;
+    padding: 15px;
+}
+
+.follow-n-play-all {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#follow-button {
+    color: #3399FF;
+    font-family: "Helvetica";
+    font-size: 10pt;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #3399FF;
+    border-radius: 3px;
+    width: 85px;
+    height: 30px;
+    /* position: absolute;
+        top: 50px;
+        left: 50px; */
+    cursor: hand;
+}
+
+.play-all {
+    background-color: cyan;
+    color: black;
+    z-index: 2;
+}
+
+button {
+    display: block
+}
+
+
+/* follow butn */
+
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes follow-animation {
+    from {
+        background: white;
+        color: #3399FF;
+        width: 85px;
+        /* left: 50px; */
+    }
+    to {
+        background: #2EB82E;
+        border-color: #2EB82E;
+        color: #ffffff;
+        width: 120px;
+        /* left: 35px; */
+    }
+}
+
+@-webkit-keyframes unfollow-animation {
+    from {
+        background: #2EB82E;
+        color: #ffffff;
+        width: 120px;
+        /* left: 35px; */
+    }
+    to {
+        background: white;
+        border-color: #3399FF;
+        color: #3399FF;
+        width: 85px;
+        /* left: 50px; */
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes follow-animation {
+    from {
+        background: white;
+        color: #3399FF;
+        width: 85px;
+        /* left: 50px; */
+    }
+    to {
+        background: #2EB82E;
+        border-color: #2EB82E;
+        color: #ffffff;
+        width: 120px;
+        /* left: 35px; */
+    }
+}
+
+@keyframes unfollow-animation {
+    from {
+        background: #2EB82E;
+        color: #ffffff;
+        width: 120px;
+        /* left: 35px; */
+    }
+    to {
+        background: white;
+        border-color: #3399FF;
+        color: #3399FF;
+        width: 85px;
+        /* left: 50px; */
+    }
+}
+
+#follow {
+    -webkit-appearance: none;
+}
+
+#follow:after {
+    color: #3399FF;
+    font-family: "Helvetica";
+    font-size: 13pt;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #3399FF;
+    border-radius: 3px;
+    /* position: absolute; */
+    /* top: 50px;
+        left: 50px; */
+    cursor: hand;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 15px;
+    content: '+ Follow';
+    -webkit-animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-animation-fill-mode: forwards;
+    animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: forwards;
+}
+
+#follow:checked:after {
+    content: 'Following';
+    -webkit-animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-animation-fill-mode: forwards;
+    animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: forwards;
+}
+
+
+/* play-all-btn */
+
+@-webkit-keyframes playall-animation {
+    from {
+        background: #2EB82E;
+        color: #ffffff;
+        width: 85px;
+        /* left: 50px; */
+    }
+    to {
+        background: red;
+        border-color: white;
+        color: #ffffff;
+        width: 85px;
+        /* left: 35px; */
+    }
+}
+
+@-webkit-keyframes playall-animation {
+    from {
+        background: red;
+        border-color: white;
+        color: #ffffff;
+        width: 85px;
+        /* left: 35px; */
+    }
+    to {
+        background: #2EB82E;
+        color: #ffffff;
+        width: 85px;
+        /* left: 50px; */
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes playall-animation {
+    from {
+        background: #2EB82E;
+        color: white;
+        width: 85px;
+        /* left: 50px; */
+    }
+    to {
+        background: red;
+        border-color: white;
+        color: #ffffff;
+        width: 85px;
+        /* left: 35px; */
+    }
+}
+
+@keyframes pauseall-animation {
+    from {
+        background: red;
+        border-color: white;
+        color: #ffffff;
+        width: 85px;
+        /* left: 35px; */
+    }
+    to {
+        background: #2EB82E;
+        color: white;
+        width: 85px;
+        /* left: 50px; */
+    }
+}
+
+#play-all {
+    -webkit-appearance: none;
+}
+
+#play-all:after {
+    color: white;
+    font-family: "Helvetica";
+    font-size: 13pt;
+    background-color: red;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 3px;
+    /* position: absolute; */
+    /* top: 50px;
+        left: 50px; */
+    cursor: hand;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 15px;
+    content: 'Play All ';
+    -webkit-animation: pauseall-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-animation-fill-mode: forwards;
+    animation: pauseall-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: forwards;
+}
+
+#play-all:checked:after {
+    content: 'Pause All';
+    -webkit-animation: playall-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-animation-fill-mode: forwards;
+    animation: playall-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: forwards;
+}
+
+
+/* aside-right-section */
+
+
+/* .aside-right {
+        background-color: rgb(4, 5, 65);
+        height: 100%;
+        width: 30%;
+    } */
+
+.queue {
+    background-color: rgb(4, 5, 65);
+    width: 350px;
+    margin-left: 50%;
+    /* margin-right: 50%; */
+}
+
+.artist-music-list .queue {
+    width: 120%;
+    margin-left: -15%;
+}
+
+.queue-music {
+    margin-right: 5%;
+}
+
+.queue-music-box {
+    width: 300px;
+    /* margin-right: 20%; */
+}
+
+
+/* .aside-right .queue-music {
+        height: 100%;
+        width: 100%
+    } */
+
+.queue-music {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 20%;
+    /* background-color: cyan; */
+}
+
+.queue-music-box {
+    margin: 2.5px;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: space-between;
+    /* z-index: 2; */
+}
+
+.queue-music-no {
+    height: 100%;
+    width: 20%;
+    /* background-color: azure; */
+    text-align: center;
+    padding-top: 9px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+.queue-music-photo {
+    background-size: 54px;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(6, 22, 22);
+}
+
+#q-1 {
+    background-image: url(/music-img/latest-hindi/dhokha.jpg);
+}
+
+#q-2 {
+    background-image: url(/music-img/latest-hindi/ashiqui\ aa\ gyi.jpg);
+}
+
+#q-3 {
+    background-image: url(/music-img/latest-hindi/kuchh\ baatein.jpg);
+}
+
+#q-4 {
+    background-image: url(/music-img/latest-hindi/ashiqui\ aa\ gyi.jpg);
+}
+
+#q-5 {
+    background-image: url(/music-img/latest-hindi/dhokha.jpg);
+}
+
+#q-6 {
+    background-image: url(/music-img/latest-hindi/ashiqui\ aa\ gyi.jpg);
+}
+
+#q-7 {
+    background-image: url(/music-img/latest-hindi/kuchh\ baatein.jpg);
+}
+
+.play-btn i {
+    color: white;
+    background-color: transparent;
+    margin-top: 15%;
+    margin-left: 35%;
+    opacity: 0;
+}
+
+.queue-music:hover {
+    box-shadow: 0px 4px 12px 2px black;
+    box-shadow: none;
+}
+
+.queue-music-box:hover i {
+    opacity: 1;
+}
+
+.queue-music-box:hover {
+    box-shadow: 0px 4px 12px 2px black;
+}
+
+.queue-music-photo img {
+    height: 100%;
+    border-radius: 10%;
+}
+
+.queue-music-description {
+    height: 100%;
+    width: 40%;
+    /* background-color: blueviolet; */
+}
+
+.queue-music-description .q-music-desc-heading {
+    align-items: center;
+    margin-top: 1%;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.queue-music-description .q-music-desc-singer {
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: -15px;
+    color: white;
+}
+
+.queue-music-like-sticker i {
+    margin-left: 10px;
+    margin-top: 18px;
+    color: white;
+}
+
+.queue-music-like-sticker i:hover {
+    color: red;
+}
+
+.fa-plus {
+    color: white;
+    margin: 5px 20px;
+}

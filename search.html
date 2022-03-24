@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
+    <script type="text/javascript" src="code.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88c508bdb0.js" crossorigin="anonymous"></script>
+    <title>Jingle</title>
+</head>
+
+<body>
+    <header>
+        <nav id="main-nav1">
+            <form id="search-bar" onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Search..." autofocus required />
+                <button type="submit">Go</button>
+            </form>
+            <a class="white text-decoration-none" href="#">Upgrade</a>
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+            <div id="profile">
+                <div id="profile-btn">
+                    <span>
+                        <img id="profile_img" src="images/My_image.jpeg" alt="Profile">
+                    </span>
+                    <span> Vivek Singh </span>
+                </div>
+                <div id="profile-content">
+                    <a href="">Account</a>
+                    <a href="">Profile</a>
+                    <a href="">Upgrade to Premium</a>
+                    <a href="">Settings</a>
+                    <br>
+                    <a href="">Log Out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- search-bar -->
+    <!-- <form id="search-bar" onsubmit="event.preventDefault();" role="search">
+        <label for="search">Search for stuff</label>
+        <input id="search" type="search" placeholder="Search..." autofocus required />
+        <button type="submit">Go</button>
+    </form> -->
+    <section id="recently-played">
+        <!-- <h2>Recently Listened</h2> -->
+        <!-- <p class="see-all"><a href="">SEE ALL </a></p> -->
+        <p> <span class="title">Recently Listened</span>
+        </p>
+        <!-- <div> -->
+        <div id="recent-container-box">
+            <div class="recent-container">
+                <!-- tadap song -->
+                <div class="music-div">
+                    <div class="photo-div">
+                        <div class="card" id="recent-1">
+                            <div>
+                                <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desciption-div">
+                        <p>Tadap</p>
+                        Preetam
+                    </div>
+                </div>
+                <!--  tune jo na kaha-->
+                <div class="music-div">
+                    <div class="photo-div">
+                        <div class="card" id="recent-2">
+                            <div>
+                                <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desciption-div">
+                        <p>Tune Jo Na Kaha</p>
+                        Preetam | Mohit Chauhan | Sandeep Shrivastav
+                    </div>
+                </div>
+                <!-- tera zikr -->
+            </div>
+            <div class="recent-container">
+                <div class="music-div">
+                    <div class="photo-div">
+                        <div class="card" id="recent-3">
+                            <div>
+                                <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desciption-div">
+                        <p>Tera Zikr</p>
+                        Darshan Raval
+                    </div>
+                </div>
+                <!-- kabhi tumhe -->
+                <div class="music-div">
+                    <div class="photo-div">
+                        <div class="card" id="recent-4">
+                            <div>
+                                <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desciption-div">
+                        <p>kabhii Tumhe</p>
+                        Javed-Mohsin | Darshan Raval
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <span class="title">Your Top Genre</span>
+        <div id="your-top-genre">
+            <!-- </p> -->
+            <a href="" class="genre" id="pop">Pop</a>
+            <a href="" class="genre" id="bollywood">Bollywood</a>
+        </div>
+    </section>
+    <section id="browse-all">
+        <span class="title">Browse All</span>
+
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b1">Podcasts</a>
+                <a href="" class="browse" id="b2">Made for You</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b3">Charts</a>
+                <a href="" class="browse" id="b4">New Release</a>
+            </div>
+        </div>
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b5">Discover</a>
+                <a href="" class="browse" id="b6">Concerts</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b7">Punjabi</a>
+                <a href="" class="browse" id="b8">Tamil</a>
+            </div>
+        </div>
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b9">EQUAL</a>
+                <a href="" class="browse" id="b10">Hindi</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b11">Bhojpuri</a>
+                <a href="" class="browse" id="b12">Tamil</a>
+            </div>
+        </div>
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b13">Telugu</a>
+                <a href="" class="browse" id="b14">Marathi</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b15">Spanish</a>
+                <a href="" class="browse" id="b16">English</a>
+            </div>
+        </div>
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b17">Indie</a>
+                <a href="" class="browse" id="b18">RADAR</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b19">Fresh Finds</a>
+                <a href="" class="browse" id="b20">Devotional</a>
+            </div>
+        </div>
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b21">Indian Classic</a>
+                <a href="" class="browse" id="b22">Romance</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b23">Wellness</a>
+                <a href="" class="browse" id="b24">Happy Holidays</a>
+            </div>
+        </div>
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b25">Decades</a>
+                <a href="" class="browse" id="b26">K-pop</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b27">Netflix</a>
+                <a href="" class="browse" id="b28">Hip-Hop</a>
+            </div>
+        </div>
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b29">Party</a>
+                <a href="" class="browse" id="b30">Instrumental</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b31">Dance/<br>Electronic</a>
+                <a href="" class="browse" id="b32">Student</a>
+            </div>
+        </div>
+        <div class="browse-all-row-box">
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b33">Chill</a>
+                <a href="" class="browse" id="b34">Mood</a>
+            </div>
+            <div class="browse-all-row">
+                <a href="" class="browse" id="b35">Higher Ground</a>
+                <a href="" class="browse" id="b36">Workout</a>
+            </div>
+        </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <script type="text/javascript" src="artist.js"></script> -->
+    <script type="text/javascript" src="code.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="artists.css">
+    <link rel="stylesheet" href="search.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88c508bdb0.js" crossorigin="anonymous"></script>
+    <title>Jingle</title>
+</head>
+
+<body>
+    <header>
+        <nav id="main-nav1">
+            <form id="search-bar" onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Search..." autofocus required />
+                <button type="submit">Go</button>
+            </form>
+            <a class="white text-decoration-none" href="#">Upgrade</a>
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+            <div id="profile">
+                <div id="profile-btn">
+                    <span>
+                            <img id="profile_img" src="images/My_image.jpeg" alt="Profile">
+                        </span>
+                    <span> Vivek Singh </span>
+                </div>
+                <div id="profile-content">
+                    <a href="">Account</a>
+                    <a href="">Profile</a>
+                    <a href="">Upgrade to Premium</a>
+                    <a href="">Settings</a>
+                    <br>
+                    <a href="">Log Out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <section id="artist-card">
+            <div class="artist-box">
+                <div class="artist-img">
+                    <img src="/music-img/artists/atif-aslam.jpg" alt="">
+                </div>
+                <div class="artist-details">
+                    <div class="artist-name-display">
+                        <div class="artist-name">Atif Aslam</div>
+                        <div class="followers">1234346 Followers</div>
+                    </div>
+                    <div class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto esse error vel neque mollitia at voluptates alias in numquam ad, earum labore aut sit totam perspiciatis porro, quisquam nesciunt? Lorem ipsum dolor sit amet.
+                    </div>
+                    <div class="follow-n-play-all">
+                        <!-- <div class="play-all-btn"> -->
+                        <!-- <button class="play">dm,clwm.,</button> -->
+                        <input id="play-all" type="checkbox" />
+                        <!-- </div> -->
+                        <!-- <div class="follow-btn"> -->
+                        <input id="follow" type="checkbox" />
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="artist-music-list">
+                <div class="queue">
+                    <!-- <div class="heading">
+                        <p class="title">Queue</p>
+                        <p class="see-all"></p>
+                    </div> -->
+                    <div id="q-heading">
+                        <div id="q-heading-1">Play List</div>
+
+                        <!-- <div class="dropdown"> -->
+                        <!-- <a onclick="myFunction()" class="dropbtn">queue</a> -->
+                        <!-- <a onclick="myFunction()" class="dropbtn "><span class="dropbtn">View All</span> <span class=" dropbtn arrow down"></span></a> -->
+                        <!-- <div id="myDropdown" class="dropdown-content"> -->
+                        <!-- <a href="#">Playlist</a> -->
+                        <!-- <a href="#">Favourite songs</a> -->
+                        <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="queue-music">
+                        <div class="queue-music-box">
+                            <div class="queue-music-no">
+                                01
+                            </div>
+                            <div class="queue-music-photo" id="q-1">
+                                <div class="queue-music-photo-hover">
+                                    <div class="play-btn">
+                                        <a href="">
+                                            <i class="fa-solid fa-play fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="queue-music-description">
+                                <p class="q-music-desc-heading">Dhokha</p>
+                                <p class="q-music-desc-singer">Arijit Singh</p>
+                            </div>
+                        </div>
+                        <div class="queue-music-like-sticker">
+                            <a href="">
+                                <i class="fa-solid fa-heart fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="queue-music">
+                        <div class="queue-music-box">
+                            <div class="queue-music-no">
+                                02
+                            </div>
+                            <div class="queue-music-photo" id="q-2">
+                                <div class="queue-music-photo-hover">
+                                    <div class="play-btn">
+                                        <a href="">
+                                            <i class="fa-solid fa-play fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="queue-music-description">
+                                <p class="q-music-desc-heading">Ashiqui</p>
+                                <p class="q-music-desc-singer">Arijit Singh</p>
+                            </div>
+                        </div>
+                        <div class="queue-music-like-sticker">
+                            <a href="">
+                                <i class="fa-solid fa-heart fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="queue-music">
+                        <div class="queue-music-box">
+                            <div class="queue-music-no">
+                                03
+                            </div>
+                            <div class="queue-music-photo" id="q-3">
+                                <div class="queue-music-photo-hover">
+                                    <div class="play-btn">
+                                        <a href="">
+                                            <i class="fa-solid fa-play fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="queue-music-description">
+                                <p class="q-music-desc-heading">Kuch Batein.</p>
+                                <p class="q-music-desc-singer">Jubin Nautiyal</p>
+                            </div>
+                        </div>
+                        <div class="queue-music-like-sticker">
+                            <a href="">
+                                <i class="fa-solid fa-heart fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="queue-music">
+                        <div class="queue-music-box">
+                            <div class="queue-music-no">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                            <div class="queue-music-photo" id="q-4">
+                                <div class="queue-music-photo-hover">
+                                    <div class="play-btn">
+                                        <a href="">
+                                            <i class="fa-solid fa-pause fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="queue-music-description">
+                                <p class="q-music-desc-heading">Tadap</p>
+                                <p class="q-music-desc-singer">Preetam</p>
+                            </div>
+                        </div>
+                        <div class="queue-music-like-sticker">
+                            <a href="">
+                                <i class="fa-solid fa-heart fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="queue-music">
+                        <div class="queue-music-box">
+                            <div class="queue-music-no">
+                                05
+                            </div>
+                            <div class="queue-music-photo" id="q-5">
+                                <div class="queue-music-photo-hover">
+                                    <div class="play-btn">
+                                        <a href="">
+                                            <i class="fa-solid fa-play fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="queue-music-description">
+                                <p class="q-music-desc-heading">Tune Jo Na Kaha</p>
+                                <p class="q-music-desc-singer">Preetam</p>
+                            </div>
+                        </div>
+                        <div class="queue-music-like-sticker">
+                            <a href="">
+                                <i class="fa-solid fa-heart fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="queue-music">
+                        <div class="queue-music-box">
+                            <div class="queue-music-no">
+                                06
+                            </div>
+                            <div class="queue-music-photo" id="q-6">
+                                <div class="queue-music-photo-hover">
+                                    <div class="play-btn">
+                                        <a href="">
+                                            <i class="fa-solid fa-play fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="queue-music-description">
+                                <p class="q-music-desc-heading">How We Do It!</p>
+                                <p class="q-music-desc-singer">Sean Paul</p>
+                            </div>
+                        </div>
+                        <div class="queue-music-like-sticker">
+                            <a href="">
+                                <i class="fa-solid fa-heart fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="aside-right">
+            <!-- <img src="/images/My_image.jpeg" alt=""> -->
+            <div class="queue">
+                <!-- <div class="heading">
+                    <p class="title">Queue</p>
+                    <p class="see-all"></p>
+                </div> -->
+                <div id="q-heading">
+                    <div id="q-heading-1">Similar Artists</div>
+                    <div class="dropdown">
+                        <!-- <a onclick="myFunction()" class="dropbtn">queue</a> -->
+                        <a onclick="myFunction()" class="dropbtn "><span class="dropbtn">View All</span> <span class=" dropbtn arrow down"></span></a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Playlist</a>
+                            <a href="#">Favourite songs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            01
+                        </div>
+                        <div class="queue-music-photo" id="q-1">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">K.K</p>
+                            <!-- <p class="q-music-desc-singer">Arijit Singh</p> -->
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            02
+                        </div>
+                        <div class="queue-music-photo" id="q-2">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">JUBIN</p>
+                            <!-- <p class="q-music-desc-singer">Arijit Singh</p> -->
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            03
+                        </div>
+                        <div class="queue-music-photo" id="q-3">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Atif Aslam</p>
+                            <!-- <p class="q-music-desc-singer">Jubin N..</p> -->
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="queue">
+                <!-- <div class="heading">
+                    <p class="title">Queue</p>
+                    <p class="see-all"></p>
+                </div> -->
+                <div id="q-heading">
+                    <div id="q-heading-1">Recently-Played</div>
+                    <div class="dropdown">
+                        <!-- <a onclick="myFunction()" class="dropbtn">queue</a> -->
+                        <a onclick="myFunction()" class="dropbtn "><span class="dropbtn">View All</span> <span class=" dropbtn arrow down"></span></a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Playlist</a>
+                            <a href="#">Favourite songs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            01
+                        </div>
+                        <div class="queue-music-photo" id="q-1">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Dhokha</p>
+                            <p class="q-music-desc-singer">Arijit Singh</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            02
+                        </div>
+                        <div class="queue-music-photo" id="q-2">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Ashiqui</p>
+                            <p class="q-music-desc-singer">Arijit Singh</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            03
+                        </div>
+                        <div class="queue-music-photo" id="q-3">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Kuch..</p>
+                            <p class="q-music-desc-singer">Jubin N..</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <div class="queue-music-photo" id="q-4">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-pause fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Tadap</p>
+                            <p class="q-music-desc-singer">Preetam</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            05
+                        </div>
+                        <div class="queue-music-photo" id="q-5">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Tune..</p>
+                            <p class="q-music-desc-singer">Preetam</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            06
+                        </div>
+                        <div class="queue-music-photo" id="q-6">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">How...</p>
+                            <p class="q-music-desc-singer">Sean Paul</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+</body>
+
+</html>

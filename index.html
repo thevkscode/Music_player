@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="code.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88c508bdb0.js" crossorigin="anonymous"></script>
+    <title>Jingle</title>
+</head>
+<!-- body -->
+
+<body>
+    <!-- header containing nav bar -->
+    <header>
+        <nav id="main-nav1">
+            <a class="white text-decoration-none" href="#">Home</a>
+            <a class="white text-decoration-none" href="#">Favourities</a>
+            <a class="white text-decoration-none" href="#">Upgrade</a>
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+            <!-- profile setion of nav bar -->
+            <div id="profile">
+                <div id="profile-btn">
+                    <span>
+                        <img id="profile_img" src="images/My_image.jpeg" alt="Profile">
+                    </span>
+                    <span> Vivek Singh </span>
+                </div>
+                <div id="profile-content">
+                    <a href="">Account</a>
+                    <a href="">Profile</a>
+                    <a href="">Upgrade to Premium</a>
+                    <a href="">Settings</a>
+                    <br>
+                    <a href="">Log Out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+        <!-- aside nav bar containind search bar and my library explore and add-playlist setion -->
+        <aside id="aside-left">
+            <div id="aside-nav">
+                <a class="white text-decoration-none" href="">Prospect</a>
+                <a class="white text-decoration-none" href="">My Library</a>
+                <a class="white text-decoration-none" href="/search.html"><span><i class="fa-solid fa-magnifying-glass"></i> Search </span></a>
+                <a class="white text-decoration-none" href=""><i class="fa-solid fa-plus"></i> Add-Playlist</a>
+            </div>
+            <hr>
+            <!-- Queue section containing playlist and fav song -->
+            <div class="queue">
+                <div id="q-heading">
+                    <div id="q-heading-1">Queue</div>
+                    <div class="dropdown">
+                        <!-- <a onclick="myFunction()" class="dropbtn">queue</a> -->
+                        <a onclick="myFunction()" class="dropbtn "><span class="dropbtn">Queue</span> <span class=" dropbtn arrow down"></span></a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Playlist</a>
+                            <a href="#">Favourite songs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            01
+                        </div>
+                        <div class="queue-music-photo" id="q-1">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Dhokha</p>
+                            <p class="q-music-desc-singer">Arijit Singh</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            02
+                        </div>
+                        <div class="queue-music-photo" id="q-2">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Ashiqui</p>
+                            <p class="q-music-desc-singer">Arijit Singh</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            03
+                        </div>
+                        <div class="queue-music-photo" id="q-3">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Kuch..</p>
+                            <p class="q-music-desc-singer">Jubin N..</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <div class="queue-music-photo" id="q-4">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-pause fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Tadap</p>
+                            <p class="q-music-desc-singer">Preetam</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            05
+                        </div>
+                        <div class="queue-music-photo" id="q-5">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">Tune..</p>
+                            <p class="q-music-desc-singer">Preetam</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="queue-music">
+                    <div class="queue-music-box">
+                        <div class="queue-music-no">
+                            06
+                        </div>
+                        <div class="queue-music-photo" id="q-6">
+                            <div class="queue-music-photo-hover">
+                                <div class="play-btn">
+                                    <a href="">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue-music-description">
+                            <p class="q-music-desc-heading">How...</p>
+                            <p class="q-music-desc-singer">Sean Paul</p>
+                        </div>
+                    </div>
+                    <div class="queue-music-like-sticker">
+                        <a href="">
+                            <i class="fa-solid fa-heart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- main and center part of the site -->
+        <div id="main">
+            <main>
+                <div class="see-all"><a href="">SEE ALL </a></div>
+                <!-- Few  new release which are trending-->
+                <div class="card-section">
+                    <div class="cards-container">
+                        <div class="card" id="card1">
+                            <div>
+                                <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="card" id="card2">
+                            <div>
+                                <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card" id="card3">
+                            <div>
+                                <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="card" id="card4">
+                            <div>
+                                <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recently Played -->
+                <section id="recently-played">
+                    <p> <span class="title">Recently Listened</span>
+                        <span class="see-all"><a href="">SEE ALL </a></span>
+                    </p>
+                    <div id="recent-container-box">
+                        <div class="recent-container">
+                            <!-- tadap song -->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="recent-1">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Tadap</p>
+                                    Preetam
+                                </div>
+                            </div>
+                            <!--  tune jo na kaha-->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="recent-2">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Tune Jo Na Kaha</p>
+                                    Preetam | Mohit Chauhan | Sandeep Shrivastav
+                                </div>
+                            </div>
+                            <!-- tera zikr -->
+                        </div>
+                        <div class="recent-container">
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="recent-3">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Tera Zikr</p>
+                                    Darshan Raval
+                                </div>
+                            </div>
+                            <!-- kabhi tumhe -->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="recent-4">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>kabhii Tumhe</p>
+                                    Javed-Mohsin | Darshan Raval
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="popular-artist">
+                    <div id="heading">
+                        <p> <span class="title">Popular Artists</span>
+                            <span class="see-all"><a href="">SEE ALL </a></span>
+                        </p>
+                    </div>
+                    <div id="artist-row-box">
+                        <div class="artist-row">
+                            <div class="artist">
+                                <a href="/arijit.html">
+                                    <img src="/music-img/artists/arijit singh.jpg" alt=""></a>
+                                <a href="/arijit.html">Arijit Singh</a>
+                            </div>
+                            <div class="artist">
+                                <a href="/atif-aslam.html">
+                                    <img src="/music-img/artists/atif-aslam.jpg" alt=""></a>
+                                <a href="/atif-aslam.html">Atif Aslam</a>
+                            </div>
+                            <div class="artist">
+                                <a href="/lata-mangeshkar.html">
+                                    <img src="/music-img/artists/lata mangeshkar.jpg" alt=""></a>
+                                <a href="/lata-mangeshkar.html">Lata Mangeshkar</a>
+                            </div>
+                        </div>
+                        <div class="artist-row">
+                            <div class="artist">
+                                <a href="/Darshan-Raval.html">
+                                    <img src="/music-img/artists/darshan raval.jpg" alt=""></a>
+                                <a href="/Darshan-Raval.html">Darshan Raval</a>
+                            </div>
+                            <div class="artist">
+                                <a href="/Neha_kakkar.html">
+                                    <img src="/music-img/artists/neha kakar.jpg" alt=""></a>
+                                <a href="/Neha_kakkar.html">Neha Kakkar</a>
+                            </div>
+                            <div class="artist">
+                                <a href="/Preetam.html">
+                                    <img src="/music-img/artists/preetam.jpg" alt=""></a>
+                                <a href="/Preetam.html">Preetam</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- MOOD -->
+                <section id="mood">
+                    <div id="mood-heading-div"><span class="title">For Your Mood</span> <span class="see-all"><a href="">SEE ALL </a></span></div>
+                    <div id="mood-box-box">
+                        <div class="mood-box">
+                            <div class="mood" id="mood-1">
+                                <div class="mood-hover">
+                                    <div class="pause-icon">
+                                        <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mood" id="mood-2">
+                                <div class="mood-hover">
+                                    <div class="pause-icon">
+                                        <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mood-box">
+                            <div class="mood" id="mood-3">
+                                <div class="mood-hover">
+                                    <div class="pause-icon">
+                                        <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mood" id="mood-4">
+                                <div class="mood-hover">
+                                    <div class="pause-icon">
+                                        <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="stations">
+                    <div id="station-row-box">
+                        <div class="station-row">
+                            <div id="station-img"></div>
+                            <a id="station-1" href="">
+                                <p>Chill</p>
+                            </a>
+                            <a id="station-2" href="">
+                                <p>Rock</p>
+                            </a>
+                        </div>
+                        <div class="station-row">
+                            <a id="station-3" href="">
+                                <p>Love</p>
+                            </a>
+                            <a id="station-4" href="">
+                                <p>Retro</p>
+                            </a>
+                            <a id="station-5" href="">
+                                <p>workout
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Latest English -->
+                <section id="latest-eng">
+                    <p> <span class="title">Latest English</span>
+                        <span class="see-all"><a href="">SEE ALL </a></span>
+                    </p>
+                    <!-- <div> -->
+                    <div id="recent-container-box">
+                        <div class="recent-container">
+                            <!-- let the grass grow song -->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="l-english-1">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Let the grass grow</p>
+                                    <!-- <p> -->
+                                    Ruel
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                            <!--  how we do it-->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="l-english-2">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>How we do it</p>
+                                    <!-- <p> -->
+                                    Sean Paul
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-container">
+                            <!-- lost track -->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="l-english-3">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Lost Track</p>
+                                    <!-- <p> -->
+                                    HAIM
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                            <!-- Love You More -->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="l-english-4">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Love You More</p>
+                                    <!-- <p> -->
+                                    Ashley Kutcher
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Latest Hindi -->
+                <section id="latest-hindi">
+                    <p> <span class="title">Latest Hindi</span>
+                        <span class="see-all"><a href="">SEE ALL </a></span>
+                    </p>
+                    <div id="recent-container-box">
+                        <div class="recent-container">
+                            <!-- kuch batein -->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="l-hindi-1">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Kuch Batein</p>
+                                    <!-- <p> -->
+                                    Payal Dev | Jubin Nautiyal | Kunaal Verma
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                            <!-- ashiqui aa gyi-->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="l-hindi-2">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Ashiqui Aa Gyi</p>
+                                    <!-- <p> -->
+                                    Arijit Singh
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-container">
+                            <!-- raataan Lambiyaan -->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="l-hindi-3">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-container">
+                                    <div class="desciption-div">
+                                        <p>Raataan Lambiyaan</p>
+                                        <!-- <p> -->
+                                        Jubin Nautiyal | Asees Kaur
+                                        <!-- </p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Dhokha -->
+                            <div class="music-div">
+                                <div class="photo-div">
+                                    <div class="card" id="l-hindi-4">
+                                        <div>
+                                            <a href=""><img class="card-play" src="/icons/play-button.png" height="60px" width="60px" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desciption-div">
+                                    <p>Dhokha</p>
+                                    <!-- <p> -->
+                                    Arijit Singh
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </section>
+        </main>
+    </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div>
+            <img src="/footer_img.png" alt="">
+        </div>
+        <hr>
+        <div id="footer-nav">
+            <div id="aside-nav">
+                <a class="white text-decoration-none" href="">Prospect</a>
+                <a class="white text-decoration-none" href="">My Library</a>
+                <a class="white text-decoration-none" href="/search.html"><span><i class="fa-solid fa-magnifying-glass"></i> Search </span></a>
+                <a class="white text-decoration-none" href=""><i class="fa-solid fa-plus"></i> Add-Playlist</a>
+            </div>
+        </div>
+        <hr>
+    </footer>
+</body>
+
+</html>
